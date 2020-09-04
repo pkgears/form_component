@@ -6,5 +6,9 @@ module TailwindFormComponents
       super
     end
 
+    def input(attribute_name, options = {}, &block)
+      TailwindFormComponents::BaseInputComponent.new
+    end
+
   end
 end

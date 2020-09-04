@@ -5,7 +5,6 @@ module TailwindFormComponents
       def tailwind_form_for(record, options = {}, &block)
         options[:builder] ||= TailwindFormComponents::FormBuilder
         options[:html] ||= {}
-        return( render(TailwindFormComponents::BaseComponent.new) )
         form_for(record, options, &block)
       end
   
