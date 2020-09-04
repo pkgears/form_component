@@ -4,7 +4,6 @@ module TailwindFormComponents
 
     def initialize(*)
       super
-      @object   = convert_to_model(@object)
     end
 
   end

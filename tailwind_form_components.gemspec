@@ -12,15 +12,15 @@ Gem::Specification.new do |spec|
   spec.description = "A gem for use forms with tailwind components based in ViewComponent"
   spec.authors     = ["Cesar Eduardo Ortiz"]
   spec.email       = 'pkgears@gmail.com'
-  spec.files       = ["lib/*"]
-  spec.homepage    =
-    'https://rubygems.org/'
-  spec.license       = 'MIT'
+  spec.files       = Dir['lib/**/*']
+  spec.homepage    = 'https://rubygems.org/'
+  spec.license     = 'MIT'
 
   spec.required_ruby_version = ">= 2.3.0"
 
-  spec.add_dependency('activemodel', '>= 5.0')
-  spec.add_dependency('actionpack', '>= 5.0')
+  spec.add_dependency "rails", "~> 6.0.3", ">= 6.0.3.1"
+  spec.add_dependency('activemodel')
+  spec.add_dependency('actionpack')
   spec.add_dependency('view_component')
   spec.add_development_dependency("rspec")
 end
