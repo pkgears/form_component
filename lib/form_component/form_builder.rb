@@ -5,7 +5,7 @@ module FormComponent
     end
 
     def input(attribute_name, options = {}, &block)
-      FormComponent::BaseInputComponent.new(
+      FormComponent::TextFieldComponent.new(
         attribute_name,
         @object_name, 
         @object,
