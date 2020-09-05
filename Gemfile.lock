@@ -3,6 +3,7 @@ PATH
   specs:
     form_component (0.1.0)
       actionpack
+      actionview
       activemodel
       rails (~> 6.0.3, >= 6.0.3.1)
       view_component
@@ -154,8 +155,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rspec
   form_component!
+  rspec
   view_component
 
 BUNDLED WITH
