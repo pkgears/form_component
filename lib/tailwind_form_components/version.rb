@@ -1,4 +1,4 @@
-module TailwindFormComponents
+module FormComponent
   module VERSION
     MAJOR = 0
     MINOR = 1

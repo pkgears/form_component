@@ -1,5 +1,5 @@
 require 'view_component'
-module ::TailwindFormComponents
+module ::FormComponent
   class BaseInputComponent < ViewComponent::Base
     
     def call

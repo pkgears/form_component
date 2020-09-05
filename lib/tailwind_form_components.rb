@@ -2,11 +2,11 @@
 
 require 'action_view'
 require 'action_pack'
-require 'tailwind_form_components/helpers/form_helper'
-require 'tailwind_form_components/engine'
+require 'form_component/helpers/form_helper'
+require 'form_component/engine'
 
-module TailwindFormComponents
+module FormComponent
   extend ActiveSupport::Autoload
 
-  autoload :FormBuilder, 'tailwind_form_components/form_builder.rb'
+  autoload :FormBuilder, 'form_component/form_builder.rb'
 end

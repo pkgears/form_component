@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 Bundler.require(*Rails.groups)
-require "tailwind_form_components"
+require "form_component"
 
 module Dummy
   class Application < Rails::Application

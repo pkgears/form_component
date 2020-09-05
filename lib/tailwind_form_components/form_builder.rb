@@ -1,4 +1,4 @@
-module TailwindFormComponents
+module FormComponent
   class FormBuilder < ActionView::Helpers::FormBuilder
     attr_reader :component, :object_name, :object
 
@@ -7,7 +7,7 @@ module TailwindFormComponents
     end
 
     def input(attribute_name, options = {}, &block)
-      TailwindFormComponents::BaseInputComponent.new.call
+      FormComponent::BaseInputComponent.new.call
     end
 
   end

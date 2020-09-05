@@ -1,14 +1,14 @@
-module TailwindFormComponents
+module FormComponent
   module Helpers
     module FormHelper
       
-      def tailwind_form_for(record, options = {}, &block)
-        options[:builder] ||= TailwindFormComponents::FormBuilder
+      def form_component_for(record, options = {}, &block)
+        options[:builder] ||= FormComponent::FormBuilder
         options[:html] ||= {}
         form_for(record, options, &block)
       end
   
-      def tailwind_fields_for(record_name, record_object = nil, options = {}, &block)
+      def form_component_fields_for(record_name, record_object = nil, options = {}, &block)
         options, record_object = record_object, nil if record_object.is_a?(Hash) && record_object.extractable_options?
         options[:builder] ||= SimpleForm::FormBuilder
   
@@ -20,5 +20,5 @@ module TailwindFormComponents
 end
 
 ActiveSupport.on_load(:action_view) do
-  include TailwindFormComponents::Helpers::FormHelper
+  include FormComponent::Helpers::FormHelper
 end

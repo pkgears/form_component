@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tailwind_form_components (0.1.0)
+    form_component (0.1.0)
       actionpack
       activemodel
       rails (~> 6.0.3, >= 6.0.3.1)
@@ -155,7 +155,7 @@ PLATFORMS
 
 DEPENDENCIES
   rspec
-  tailwind_form_components!
+  form_component!
   view_component
 
 BUNDLED WITH
